@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+   
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">Shopping cart</a>
+
+                <nav>
+                    <ul id="links">
+                        <li> <a href="login.html">Sign in</a></li> 
+
+                        <li>  <a href="register.html">Sign up</a></li>
+                    </ul>
+                    <ul id="user_info">
+                        <li><a href="profile.html" id="user">user</a></li>
+                        <li><a href="favorites.html" >favorites</a></li>
+                        <li><a href="myProducts.html" >my products</a></li>
+
+
+                        <li class="cart">
+                            <i class="fa-sharp fa-solid fa-cart-plus"> </i> 
+                            <span class="badge"></span>
+
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cartProducts.html">view all</a>
+                            </div>
+                        </li>
+                        <li><a href="#" id="logout">logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> 
+    </header>
+    
+
+    <section class="section-products">
+        <div class="searchDiv">
+        <input id="search" placeholder="search by name">
+        </div>
+        <div class="container">
+            <div class="products">
+               
+
+            </div>
+            <div class="filter">
+                <select id="filterBySize">
+                    <option value="" hidden>filter by size</option>
+                    <option value="all">all</option>
+                    <option value="large">large</option>
+                    <option value="medium">medium</option>
+                    <option value="small">small</option>
+                </select>
+            </div>
+         <div class="clear">
+
+         </div>
+        </div>
+        
+    </section>
+
+        <!-- create ptoduct -->
+    
+        <a href="createProduct.html" id="create-icon"><i class="fa-solid fa-plus"></i></a>
+
+    
+
+   
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cartMnue.js"></script>
+</body>
+</html>
